@@ -1,19 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router';
+import NavLink from './nav/NavLink';
 
 const SiteHeader = () => (
   <header className="sixteen wide column">
     <nav className="ui secondary pointing menu">
-      <a className="item active">Home</a>
-      <a className="item">Books</a>
-      <a className="item">Courses</a>
-      <a className="item">Onsite Training</a>
+      <Link to="/" className="item">Home</Link>
+      <NavLink to="/books">Books</NavLink>
+      <NavLink to="/courses">Courses</NavLink>
+      <NavLink to="/onsite-tranning">Onsite Training</NavLink>
       <div className="right menu">
-        <a href="/" className="ui item">
+        <Link to="/signup" className="item">
           Sign Up
-        </a>
-        <a href="/" className="ui item">
+        </Link>
+        <Link to="/signin" className="item">
           Sign In
-        </a>
+        </Link>
       </div>
     </nav>
   </header>
