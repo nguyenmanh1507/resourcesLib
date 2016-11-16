@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import CardDetailInfo from './components/CardDetailInfo';
 import CardDetailText from './components/CardDetailText';
 
-const CardDetail = () => (
+const CardDetail = (props) => (
   <div className="ui segment">
-    <h2>The Day The Crayons Quit</h2>
+    <h2>{props.title}</h2>
     <div>
       <i className="star icon"></i>
       <i className="star icon"></i>
@@ -12,9 +12,13 @@ const CardDetail = () => (
       <i className="star icon"></i>
       <i className="star empty icon"></i>
     </div>
-    <CardDetailInfo />
-    <CardDetailText />
+    <CardDetailInfo {...props} />
+    <CardDetailText {...props} />
   </div>
 );
+
+CardDetail.propsTypes = {
+  title: PropTypes.string,
+};
 
 export default CardDetail;

@@ -6,40 +6,42 @@ class CommentsList extends Component {
     super()
     this.state = {
       comments: [],
-    }
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({ comments: nextProps.data });
   }
 
   render() {
+    const comments = this.state.comments.map(c => (
+      <Comment
+        key={c.id}
+        avatarUrl={c.avatarUrl}
+        name={c.name}
+        commentTime={c.time}
+        commentContent={c.content}
+      >
+        {(c.reply.length !== 0) &&
+          <div className="comments">
+            {c.reply.map(r => (
+              <Comment
+                key={r.id}
+                avatarUrl={r.avatarUrl}
+                name={r.name}
+                commentTime={r.time}
+                commentContent={r.content}
+              />
+            ))}
+          </div>
+        }
+      </Comment>
+    ));
+
     return (
       <div>
         <h3 className="ui dividing header">Comments</h3>
-        <Comment
-          avatarUrl="http://placehold.it/60x60"
-          name="Matt"
-          commentTime="Today at 5:42PM"
-          commentContent="How artistic!"
-        />
-        <Comment
-          avatarUrl="http://placehold.it/60x60"
-          name="Elliot Fu"
-          commentTime="Yesterday at 12:30AM"
-          commentContent="This has been very useful for my research. Thanks as well!"
-        >
-          <div className="comments">
-            <Comment
-              avatarUrl="http://placehold.it/60x60"
-              name="Jenny Hess"
-              commentTime="Just now"
-              commentContent="Elliot you are always so right :)"
-            />
-          </div>
-        </Comment>
-        <Comment
-          avatarUrl="http://placehold.it/60x60"
-          name="Joe Henderson"
-          commentTime="5 days ago"
-          commentContent="Dude, this is awesome. Thanks so much"
-        />
+        {comments}
       </div>
     );
   }

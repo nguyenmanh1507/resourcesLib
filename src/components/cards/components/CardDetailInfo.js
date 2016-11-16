@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const CardDetailInfo = () => (
+const CardDetailInfo = ({
+  printLenght,
+  author,
+  publicationDate,
+  uploader,
+}) => (
   <table className="ui very basic table">
     <tbody>
       <tr>
         <td className="collapsing">Print Length</td>
-        <td>320 pages</td>
+        <td>{printLenght} pages</td>
       </tr>
       <tr>
         <td className="collapsing">Author</td>
-        <td>Drew Daywalt</td>
+        <td>{author}</td>
       </tr>
       <tr>
         <td className="collapsing">Publication Date</td>
-        <td>August 1, 2013</td>
+        <td>{publicationDate}</td>
       </tr>
       <tr>
         <td className="collapsing">Resource link</td>
@@ -25,10 +30,17 @@ const CardDetailInfo = () => (
       </tr>
       <tr>
         <td>Uploader</td>
-        <td>ngmanh</td>
+        <td>{uploader}</td>
       </tr>
     </tbody>
   </table>
 );
+
+CardDetailInfo.propTypes = {
+  printLenght: PropTypes.number,
+  author: PropTypes.string,
+  publicationDate: PropTypes.string,
+  uploader: PropTypes.string,
+};
 
 export default CardDetailInfo;

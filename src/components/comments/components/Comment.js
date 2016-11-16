@@ -23,10 +23,10 @@ const Comment = props => (
 );
 
 Comment.propTypes = {
-  avatarUrl: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  commentTime: PropTypes.string.isRequired,
-  commentContent: PropTypes.string.isRequired,
+  avatarUrl: PropTypes.string,
+  name: PropTypes.string,
+  commentTime: PropTypes.string,
+  commentContent: PropTypes.string,
 }
 
 export default Comment;

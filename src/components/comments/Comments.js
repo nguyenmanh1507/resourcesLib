@@ -2,10 +2,10 @@ import React from 'react';
 import CommentForm from './components/CommentForm';
 import CommentsList from './components/CommentsList';
 
-const Comments = () => (
+const Comments = ({ comments }) => (
   <div className="ui segment">
     <div className="ui comments">
-      <CommentsList />
+      <CommentsList data={comments} />
       <CommentForm />
     </div>
   </div>
