@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './assets/stylesheets/semantic.css';
 import SiteHeader from './components/SiteHeader';
-import SiteContent from './components/SiteContent';
 import SiteFooter from './components/SiteFooter';
 
 class App extends Component {
@@ -9,7 +8,8 @@ class App extends Component {
     return (
       <div className="ui grid container">
         <SiteHeader />
-        <SiteContent />
+        {/* <SiteContent /> */}
+        {this.props.children}
         <SiteFooter />
       </div>
     );
