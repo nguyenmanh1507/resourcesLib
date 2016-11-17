@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './assets/stylesheets/semantic.css';
+import './assets/stylesheets/app.css';
 import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
 

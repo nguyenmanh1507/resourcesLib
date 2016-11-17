@@ -1,0 +1,14 @@
+.background-masker {
+  width: 100%;
+  height: 14px;
+
+  background: #eee;
+}
+
+.background-masker.short {
+  width: 30%;
+}
+
+.background-masker.picture {
+  height: 120px;
+}
