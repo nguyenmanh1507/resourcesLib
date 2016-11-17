@@ -7,7 +7,6 @@ const CardContent = ({
   publicationDate,
 }) => (
   <div className="content">
-    {console.log(printLength)}
     <a className="header">{title}</a>
     <div className="meta">
       <i className="star icon"></i>
