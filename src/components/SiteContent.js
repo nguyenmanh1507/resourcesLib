@@ -5,17 +5,8 @@ class SiteContent extends Component {
   render() {
     return (
       <div className="row">
-        <div className="ui four cards">
-
+        <div className="ui four wide column">
           <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-
         </div>
       </div>
     );
