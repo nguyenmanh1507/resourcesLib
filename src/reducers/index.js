@@ -1,5 +1,6 @@
 import {
   FETCH_ALL_POSTS, REQUEST_POSTS, RECEIVE_POSTS,
+  REQUEST_POST, RECEIVE_POST,
 } from '../constants';
 
 const initialState = {
@@ -23,6 +24,17 @@ export default function resourcesLib(state = initialState, action) {
       return Object.assign({}, state, {
         isFetching: false,
         posts: action.posts,
+      });
+
+    case REQUEST_POST:
+      return Object.assign({}, state, {
+        isFetching: true,
+      });
+
+    case RECEIVE_POST:
+      return Object.assign({}, state, {
+        isFetching: false,
+        selectedPost: action.post,
       });
 
     default:

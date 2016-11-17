@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import fetchPosts from '../actions';
+import { fetchPosts } from '../actions';
 import SiteContent from '../components/SiteContent';
 
 function mapStateToProps(state) {

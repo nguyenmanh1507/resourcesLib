@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const CardContent = ({
+  id,
   title,
   printLength,
   author,
   publicationDate,
 }) => (
   <div className="content">
-    <a className="header">{title}</a>
+    <Link to={`post/${id}`} className="header">{title}</Link>
     <div className="meta">
       <i className="star icon"></i>
       <i className="star icon"></i>

@@ -2,19 +2,8 @@ import React, { Component } from 'react';
 import Comment from './Comment';
 
 class CommentsList extends Component {
-  constructor() {
-    super()
-    this.state = {
-      comments: [],
-    };
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({ comments: nextProps.data });
-  }
-
   render() {
-    const comments = this.state.comments.map(c => (
+    const comments = this.props.comments.map(c => (
       <Comment
         key={c.id}
         avatarUrl={c.avatarUrl}

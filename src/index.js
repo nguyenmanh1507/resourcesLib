@@ -9,7 +9,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 import App from './App';
 import SiteContentPage from './pages/SiteContentPage';
-import SiteContentDetail from './components/SiteContentDetail';
+import SiteContentDetailPage from './pages/SiteContentDetailPage';
 
 const loggerMiddleware = createLoger();
 
@@ -28,7 +28,7 @@ ReactDOM.render(
         <Route path="books" component={SiteContentPage} />
         <Route path="courses" component={SiteContentPage} />
         <Route path="onsite-tranning" component={SiteContentPage} />
-        <Route path="post/:id" component={SiteContentDetail} />
+        <Route path="post/:id" component={SiteContentDetailPage} />
         <Route path="signup" component={SiteContentPage} />
         <Route path="signin" component={SiteContentPage} />
       </Route>
