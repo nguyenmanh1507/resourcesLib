@@ -1,9 +1,6 @@
 import {
   FETCH_ALL_POSTS,
 } from '../constants';
-import {
-  fetchAllPosts,
-} from '../actions';
 
 const initialState = {
   posts: [],
