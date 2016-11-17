@@ -2,13 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import createLoger from 'redux-logger';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 import App from './App';
 import SiteContent from './components/SiteContent';
 import SiteContentDetail from './components/SiteContentDetail';
 
-let store = createStore(rootReducer);
+import fetchPosts from './actions';
+
+const loggerMiddleware = createLoger();
+
+const store = createStore(rootReducer, composeWithDevTools(
+  applyMiddleware(
+    thunkMiddleware,
+    loggerMiddleware
+  ))
+);
+
+store.dispatch(fetchPosts());
 
 ReactDOM.render(
   <Provider store={store}>
