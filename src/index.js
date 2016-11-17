@@ -11,8 +11,6 @@ import App from './App';
 import SiteContent from './components/SiteContent';
 import SiteContentDetail from './components/SiteContentDetail';
 
-import fetchPosts from './actions';
-
 const loggerMiddleware = createLoger();
 
 const store = createStore(rootReducer, composeWithDevTools(
@@ -21,8 +19,6 @@ const store = createStore(rootReducer, composeWithDevTools(
     loggerMiddleware
   ))
 );
-
-store.dispatch(fetchPosts());
 
 ReactDOM.render(
   <Provider store={store}>
