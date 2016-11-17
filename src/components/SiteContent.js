@@ -9,11 +9,13 @@ class SiteContent extends Component {
 
   render() {
     const props = this.props;
+    // only show loader if posts data empty
+    const isNeedShowLoader = (props.posts.length === 0);
 
     return (
       <div className="row">
         <div className="ui four wide column">
-          {props.isFetching && <CardLoader />}
+          {isNeedShowLoader && <CardLoader />}
           {props.posts.map((data, index) => <Card key={index} {...data} />)}
         </div>
       </div>
