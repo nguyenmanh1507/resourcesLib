@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const CardImage = () => (
+const CardImage = props => (
   <Link to="/post/1" className="image">
-    <img src="http://placehold.it/320x180" alt="Resource thumbnail" />
+    <img src={props.thumbnail} alt="Resource thumbnail" />
   </Link>
 );
 

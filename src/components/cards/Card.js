@@ -6,11 +6,12 @@ import CardExtraContent from './components/CardExtraContent';
 
 class Card extends Component {
   render() {
+    console.log(this.props);
     return (
       <article className="ui card">
-        <CardTopMeta />
-        <CardImage />
-        <CardContent />
+        <CardTopMeta uploader={this.props.uploader} />
+        <CardImage thumbnail={this.props.thumbnail} />
+        <CardContent {...this.props} />
         <CardExtraContent />
       </article>
     );

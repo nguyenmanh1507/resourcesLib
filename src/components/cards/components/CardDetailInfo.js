@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const CardDetailInfo = ({
-  printLenght,
+  printLength,
   author,
   publicationDate,
   uploader,
@@ -10,7 +10,7 @@ const CardDetailInfo = ({
     <tbody>
       <tr>
         <td className="collapsing">Print Length</td>
-        <td>{printLenght} pages</td>
+        <td>{printLength} pages</td>
       </tr>
       <tr>
         <td className="collapsing">Author</td>
