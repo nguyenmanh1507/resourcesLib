@@ -8,10 +8,8 @@ import createLoger from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 import App from './App';
-import SiteContent from './components/SiteContent';
+import SiteContentPage from './pages/SiteContentPage';
 import SiteContentDetail from './components/SiteContentDetail';
-
-import fetchPosts from './actions';
 
 const loggerMiddleware = createLoger();
 
@@ -22,19 +20,17 @@ const store = createStore(rootReducer, composeWithDevTools(
   ))
 );
 
-store.dispatch(fetchPosts());
-
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={SiteContent} />
-        <Route path="books" component={SiteContent} />
-        <Route path="courses" component={SiteContent} />
-        <Route path="onsite-tranning" component={SiteContent} />
+        <IndexRoute component={SiteContentPage} />
+        <Route path="books" component={SiteContentPage} />
+        <Route path="courses" component={SiteContentPage} />
+        <Route path="onsite-tranning" component={SiteContentPage} />
         <Route path="post/:id" component={SiteContentDetail} />
-        <Route path="signup" component={SiteContent} />
-        <Route path="signin" component={SiteContent} />
+        <Route path="signup" component={SiteContentPage} />
+        <Route path="signin" component={SiteContentPage} />
       </Route>
     </Router>
   </Provider>,
