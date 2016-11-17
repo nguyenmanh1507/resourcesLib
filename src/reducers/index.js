@@ -9,10 +9,12 @@ const initialState = {
   posts: [],
 }
 
-function resourcesLib(state = initialState, action) {
+export default function resourcesLib(state = initialState, action) {
   switch (action.type) {
     case FETCH_ALL_POSTS:
-      return state;
+      return Object.assign({}, state, {
+        posts: action.posts,
+      });
 
     default:
       return state;
