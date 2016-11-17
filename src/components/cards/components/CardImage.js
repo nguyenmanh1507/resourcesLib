@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const CardImage = () => (
-  <a href="/" className="image">
+  <Link to="/post/1" className="image">
     <img src="http://placehold.it/320x180" alt="Resource thumbnail" />
-  </a>
+  </Link>
 );
 
 export default CardImage;

@@ -11,7 +11,11 @@ const CardContent = () => (
       <i className="star empty icon"></i>
     </div>
     <div className="description">
-      Reactive programming is taking the software world by storm. This book combines the reactive programming philosophy with the possibilities of...
+      <div className="ui list">
+        <div className="item"><strong>Print Length</strong>: 320 pages</div>
+        <div className="item"><strong>Author</strong>: Dimitri Ogla</div>
+        <div className="item"><strong>Publication Date</strong>: May 21, 2011</div>
+      </div>
     </div>
   </div>
 );
