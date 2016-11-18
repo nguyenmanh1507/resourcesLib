@@ -10,11 +10,13 @@ class SiteContent extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchPosts();
+    // only call api when posts empty (refresh state)
+    if (this.props.resourcesLib.posts.length === 0) {
+      this.props.fetchPosts();
+    }
 
     // set scroll position when user comeback
     window.scrollTo(0, this.props.behavior.previousScrollPosition);
-
     // update scroll postion
     window.addEventListener('scroll', this.trackScrollPosition);
   }
