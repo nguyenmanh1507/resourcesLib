@@ -30,11 +30,18 @@
           "content": "This has been very useful for my research. Thanks as well!",
           "reply": [
             {
-              "id": 2,
+              "id": 1,
               "avatarUrl": "http://placehold.it/60x60",
               "name": "Elliot Fu",
               "time": "Just now",
               "content": "Elliot you are always so right :)"
+            },
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Natalia Haha",
+              "time": "Just now",
+              "content": "Thanks for advice!!!"
             }
           ]
         },
