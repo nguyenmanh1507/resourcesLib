@@ -9,7 +9,7 @@ class Card extends Component {
     const props = this.props;
 
     return (
-      <article className="card pink">
+      <article className="card">
         <CardTopMeta uploader={props.uploader} />
         <CardImage thumbnail={props.thumbnail} postId={props.id} />
         <CardContent {...props} />

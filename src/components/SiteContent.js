@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import Card from './cards/Card';
 import CardLoader from './loaders/CardLoader';
+import { browserHistory } from 'react-router';
 
 class SiteContent extends Component {
   componentDidMount() {
+    // window.scrollIntoView();
+    console.log(browserHistory);
+
     this.props.fetchPosts();
   }
 

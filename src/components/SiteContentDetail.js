@@ -7,21 +7,22 @@ import CardSegmentLoader from './loaders/CardSegmentLoader';
 
 class SiteContentDetail extends Component {
   componentDidMount() {
-    this.props.fetchPost(this.props.params.id);
-  }
+    // keep window on top
+    window.scrollTo(0, 0);
 
-  renderLoader() {
-    return (
-      <div className="ui segment">
-        <div className="ui active dimmer">
-          <div className="ui loader"></div>
-        </div>
-      </div>
-    );
+    if (this.props.posts.length !== 0) {
+      // find post in store if posts not empty
+      this.props.findPost(this.props.params.id);
+    } else {
+      // only call api if posts empty
+      this.props.fetchPost(this.props.params.id);
+    }
+
   }
 
   render() {
     const post = this.props.selectedPost;
+    // Only show loader if post empty
     const isNeedLoader = !post;
 
     return(
