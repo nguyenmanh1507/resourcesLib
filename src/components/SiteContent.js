@@ -3,17 +3,29 @@ import Card from './cards/Card';
 import CardLoader from './loaders/CardLoader';
 
 class SiteContent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.trackScrollPosition = this.trackScrollPosition.bind(this);
+  }
+
   componentDidMount() {
     this.props.fetchPosts();
+
+    // set scroll position when user comeback
+    window.scrollTo(0, this.props.behavior.previousScrollPosition);
+
+    // update scroll postion
     window.addEventListener('scroll', this.trackScrollPosition);
   }
 
   componentWillUnmount() {
+    // untrack scroll listener when component unmount
     window.removeEventListener('scroll', this.trackScrollPosition);
   }
 
   trackScrollPosition() {
-    console.log(window.scrollY);
+    this.props.updateScrollPosition(window.scrollY);
   }
 
   render() {
