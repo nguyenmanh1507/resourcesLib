@@ -10,5 +10,12 @@
 }
 
 .background-masker.picture {
-  height: 120px;
+  height: 100%;
+}
+
+/* Keep card image ratio 16:9 */
+.ui.cards > .card > .image,
+.ui.card > .image {
+  height: 0;
+  padding-bottom: 56.25%;
 }
