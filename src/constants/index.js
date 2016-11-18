@@ -9,3 +9,6 @@ export const RECEIVE_POST = 'RECEIVE_POST';
 
 // get post in store
 export const FIND_POST = 'FIND_POST';
+
+// update scroll position
+export const UPDATE_SCROLL_POSITION = 'UPDATE_SCROLL_POSITION';

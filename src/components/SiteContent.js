@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import Card from './cards/Card';
 import CardLoader from './loaders/CardLoader';
-import { browserHistory } from 'react-router';
 
 class SiteContent extends Component {
   componentDidMount() {
-    // window.scrollIntoView();
-    console.log(browserHistory);
-
     this.props.fetchPosts();
+    window.addEventListener('scroll', this.trackScrollPosition);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.trackScrollPosition);
+  }
+
+  trackScrollPosition() {
+    console.log(window.scrollY);
   }
 
   render() {
-    const props = this.props;
+    const props = this.props.resourcesLib;
     // only show loader if posts data empty
     const isNeedShowLoader = (props.posts.length === 0);
 

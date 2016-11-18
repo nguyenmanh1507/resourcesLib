@@ -4,6 +4,7 @@ import {
   FETCH_ALL_POSTS, REQUEST_POSTS, RECEIVE_POSTS,
   REQUEST_POST, RECEIVE_POST,
   FIND_POST,
+  UPDATE_SCROLL_POSITION,
 } from '../constants';
 
 es6Promise.polyfill();
@@ -75,5 +76,13 @@ export function findPost(postId) {
   return {
     type: FIND_POST,
     postId,
+  };
+};
+
+// update scroll position
+export function updateScrollPosition(value) {
+  return {
+    type: UPDATE_SCROLL_POSITION,
+    value,
   };
 };

@@ -7,21 +7,22 @@ import CardSegmentLoader from './loaders/CardSegmentLoader';
 
 class SiteContentDetail extends Component {
   componentDidMount() {
+    const props = this.props;
     // keep window on top
     window.scrollTo(0, 0);
 
-    if (this.props.posts.length !== 0) {
+    if (props.resourcesLib.posts.length !== 0) {
       // find post in store if posts not empty
-      this.props.findPost(this.props.params.id);
+      props.findPost(props.params.id);
     } else {
       // only call api if posts empty
-      this.props.fetchPost(this.props.params.id);
+      props.fetchPost(props.params.id);
     }
 
   }
 
   render() {
-    const post = this.props.selectedPost;
+    const post = this.props.resourcesLib.selectedPost;
     // Only show loader if post empty
     const isNeedLoader = !post;
 
