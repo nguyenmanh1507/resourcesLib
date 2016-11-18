@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardDetail from './cards/CardDetail';
 import CardDetailThumbnail from './cards/components/CardDetailThumbnail';
 import Comments from './comments/Comments';
+import CardImageLoader from './loaders/CardImageLoader';
+import CardSegmentLoader from './loaders/CardSegmentLoader';
 
 class SiteContentDetail extends Component {
   componentDidMount() {
@@ -26,19 +28,19 @@ class SiteContentDetail extends Component {
       <div className="row">
         <div className="ui eight wide column">
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardImageLoader />
           ) : (
             <CardDetailThumbnail {...post} />
           )}
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardSegmentLoader />
           ) : (
             <CardDetail {...post} />
           )}
         </div>
         <div className="ui eight wide column">
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardSegmentLoader />
           ) : (
             <Comments {...post} />
           )}

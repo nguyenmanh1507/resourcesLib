@@ -13,9 +13,22 @@
   height: 100%;
 }
 
+.background-masker.picture-2 {
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
 /* Keep card image ratio 16:9 */
 .ui.cards > .card > .image,
 .ui.card > .image {
   height: 0;
   padding-bottom: 56.25%;
+}
+
+.image-169 {
+  height: 0;
+  padding-bottom: 56.25%;
+
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.3125em;
 }
