@@ -14,9 +14,13 @@ class SiteContent extends Component {
 
     return (
       <div className="row">
-        <div className="ui four wide column">
-          {isNeedShowLoader && <CardLoader />}
-          {props.posts.map((data, index) => <Card key={index} {...data} />)}
+        <div className="ui sixteen wide column">
+          <div className="ui four stackable cards">
+            {isNeedShowLoader && (
+              [0, 1, 2, 3].map(index => <CardLoader key={index} />)
+            )}
+            {props.posts.map((data, index) => <Card key={index} {...data} />)}
+          </div>
         </div>
       </div>
     );
