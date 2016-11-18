@@ -8,7 +8,9 @@ const initialState = {
 export default function behavior(state = initialState, action) {
   switch(action.type) {
     case UPDATE_SCROLL_POSITION:
-      return state;
+      return Object.assign({}, state, {
+        previousScrollPosition: action.value,
+      });
 
     default:
       return state;
