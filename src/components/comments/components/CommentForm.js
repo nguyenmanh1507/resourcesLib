@@ -5,9 +5,9 @@ const CommentForm = () => (
     <div className="field">
       <textarea></textarea>
     </div>
-    <div className="ui blue labeled submit icon button">
-      <i className="icon edit"></i> Add Reply
-    </div>
+    <button type="submit" className="ui teal labeled submit icon button">
+      <i className="icon edit"></i> Comment
+    </button>
   </form>
 );
 

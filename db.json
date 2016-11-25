@@ -30,6 +30,397 @@
           "content": "This has been very useful for my research. Thanks as well!",
           "reply": [
             {
+              "id": 1,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            },
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Natalia Haha",
+              "time": "Just now",
+              "content": "Thanks for advice!!!"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Python Crash Course: A Hands-On, Project-Based Introduction to Programming",
+      "rating": 5,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Eric Matthes",
+      "printLength": 560,
+      "publicationDate": "November 30, 2015",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "Python Crash Course is a fast-paced, thorough introduction to programming with Python that will have you writing programs, solving problems, and making things that work in no time. In the first half of the book, you'll learn about basic programming concepts, such as lists, dictionaries, classes, and loops, and practice writing clean and readable code with exercises for each topic. You'll also learn how to make your programs interactive and how to test your code safely before adding it to a project. In the second half of the book, you'll put your new knowledge into practice with three substantial projects: a Space Invaders-inspired arcade game, data visualizations with Python's super-handy libraries, and a simple web app you can deploy online.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "A Smarter Way to Learn JavaScript: The new approach that uses technology to cut your effort in half",
+      "rating": 4,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": " Mark Myers",
+      "printLength": 256,
+      "publicationDate": "November 28, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "Using the Smarter Way to Learn method, you actually learn JavaScript, you don’t just read about it. Research shows that you learn four times as effectively when you practice after you read. So each chapter is paired with free, interactive exercises--more than 1,000 of them in all. You know you're learning because you can prove it to yourself.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "JavaScript and JQuery: Interactive Front-End Web Development",
+      "rating": 5,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Jon Duckett",
+      "printLength": 640,
+      "publicationDate": "June 30, 2014",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "This book was written for anyone who wants to use JavaScript to make their websites a little more interesting, engaging, interactive, or usable. In particular, it is aimed at people who do not have a degree in computer science (well, not yet anyway). Programming books can be intimidating, so we wanted to create a book that taught readers how to use JavaScript in a gentler, more visual way. And importantly, we did not want to assume that the reader had any experience of programming beyond the ability to create a web page in HTML and CSS. (After all, many kinds of people are creating websites these days, and not all of us come from a programming background.).",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "JavaScript: The Definitive Guide: Activate Your Web Pages (Definitive Guides)",
+      "rating": 5,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": " David Flanagan",
+      "printLength": 320,
+      "publicationDate": "August 1, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "Since 1996, JavaScript: The Definitive Guide has been the bible for JavaScript programmers—a programmer's guide and comprehensive reference to the core language and to the client-side JavaScript APIs defined by web browsers.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Web Design with HTML, CSS, JavaScript and jQuery Set",
+      "rating": 4,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Drew Daywalt",
+      "printLength": 320,
+      "publicationDate": "August 1, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "We are excited to launch our new company and product Ooooh. After being featured in too many magazines to mention and having created an online stir, we know that Ooooh is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do. We also hope to win Startup Fictional Business of the Year this Year.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Secrets of the JavaScript Ninja",
+      "rating": 4,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Drew Daywalt",
+      "printLength": 320,
+      "publicationDate": "August 1, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "We are excited to launch our new company and product Ooooh. After being featured in too many magazines to mention and having created an online stir, we know that Ooooh is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do. We also hope to win Startup Fictional Business of the Year this Year.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "The Principles of Object-Oriented JavaScript",
+      "rating": 4,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Drew Daywalt",
+      "printLength": 320,
+      "publicationDate": "August 1, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "We are excited to launch our new company and product Ooooh. After being featured in too many magazines to mention and having created an online stir, we know that Ooooh is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do. We also hope to win Startup Fictional Business of the Year this Year.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
+              "id": 2,
+              "avatarUrl": "http://placehold.it/60x60",
+              "name": "Elliot Fu",
+              "time": "Just now",
+              "content": "Elliot you are always so right :)"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Joe Henderson",
+          "time": "5 days ago",
+          "content": "Dude, this is awesome. Thanks so much",
+          "reply": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "JavaScript: The Good Parts: The Good Parts",
+      "rating": 4,
+      "thumbnail": "http://placehold.it/320x180",
+      "author": "Drew Daywalt",
+      "printLength": 320,
+      "publicationDate": "August 1, 2013",
+      "resourceUrl": "https://amazon.com",
+      "downloadUrl": "https://drive.google.com",
+      "uploader": "ngmanh",
+      "description": "We are excited to launch our new company and product Ooooh. After being featured in too many magazines to mention and having created an online stir, we know that Ooooh is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do. We also hope to win Startup Fictional Business of the Year this Year.",
+      "uploaderReview": "It’s just brilliant. I will recommend Ooooh to everyone I know!",
+      "comments": [
+        {
+          "id": 1,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Matt",
+          "time": "Today at 5:42PM",
+          "content": "How artistic!",
+          "reply": []
+        },
+        {
+          "id": 2,
+          "avatarUrl": "http://placehold.it/60x60",
+          "name": "Elliot Fu",
+          "time": "Yesterday at 12:30AM",
+          "content": "This has been very useful for my research. Thanks as well!",
+          "reply": [
+            {
               "id": 2,
               "avatarUrl": "http://placehold.it/60x60",
               "name": "Elliot Fu",

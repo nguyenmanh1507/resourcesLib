@@ -1,17 +1,12 @@
 import React, { PropTypes } from 'react';
 import CardDetailInfo from './components/CardDetailInfo';
 import CardDetailText from './components/CardDetailText';
+import CardRating from './components/CardRating';
 
-const CardDetail = (props) => (
+const CardDetail = props => (
   <div className="ui segment">
     <h2>{props.title}</h2>
-    <div>
-      <i className="star icon"></i>
-      <i className="star icon"></i>
-      <i className="star icon"></i>
-      <i className="star icon"></i>
-      <i className="star empty icon"></i>
-    </div>
+    <CardRating rating={props.rating} />
     <CardDetailInfo {...props} />
     <CardDetailText {...props} />
   </div>

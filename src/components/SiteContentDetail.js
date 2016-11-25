@@ -2,43 +2,47 @@ import React, { Component } from 'react';
 import CardDetail from './cards/CardDetail';
 import CardDetailThumbnail from './cards/components/CardDetailThumbnail';
 import Comments from './comments/Comments';
+import CardImageLoader from './loaders/CardImageLoader';
+import CardSegmentLoader from './loaders/CardSegmentLoader';
 
 class SiteContentDetail extends Component {
   componentDidMount() {
-    this.props.fetchPost(this.props.params.id);
-  }
+    const props = this.props;
+    // keep window on top
+    window.scrollTo(0, 0);
 
-  renderLoader() {
-    return (
-      <div className="ui segment">
-        <div className="ui active dimmer">
-          <div className="ui loader"></div>
-        </div>
-      </div>
-    );
+    if (props.resourcesLib.posts.length !== 0) {
+      // find post in store if posts not empty
+      props.findPost(props.params.id);
+    } else {
+      // only call api if posts empty
+      props.fetchPost(props.params.id);
+    }
+
   }
 
   render() {
-    const post = this.props.selectedPost;
+    const post = this.props.resourcesLib.selectedPost;
+    // Only show loader if post empty
     const isNeedLoader = !post;
 
     return(
       <div className="row">
         <div className="ui eight wide column">
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardImageLoader />
           ) : (
             <CardDetailThumbnail {...post} />
           )}
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardSegmentLoader />
           ) : (
             <CardDetail {...post} />
           )}
         </div>
         <div className="ui eight wide column">
           {isNeedLoader ? (
-            this.renderLoader()
+            <CardSegmentLoader />
           ) : (
             <Comments {...post} />
           )}

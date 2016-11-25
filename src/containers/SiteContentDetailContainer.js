@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchPost } from '../actions';
+import { fetchPost, findPost } from '../actions';
 import SiteContentDetail from '../components/SiteContentDetail';
 
 function mapStateToProps(state) {
@@ -8,7 +8,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    fetchPost: (postId) => dispatch(fetchPost(postId)),
+    fetchPost: postId => dispatch(fetchPost(postId)),
+    findPost: postId => dispatch(findPost(postId)),
   };
 }
 

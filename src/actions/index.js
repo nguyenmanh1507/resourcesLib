@@ -3,6 +3,8 @@ import fetch from 'isomorphic-fetch';
 import {
   FETCH_ALL_POSTS, REQUEST_POSTS, RECEIVE_POSTS,
   REQUEST_POST, RECEIVE_POST,
+  FIND_POST,
+  UPDATE_SCROLL_POSITION,
 } from '../constants';
 
 es6Promise.polyfill();
@@ -40,7 +42,7 @@ export function fetchPosts() {
   };
 };
 
-// get single post
+// get single post remote endpoint
 function requestPost() {
   return {
     type: REQUEST_POST,
@@ -71,7 +73,25 @@ export function fetchPost(postId) {
       .then(response => response.json())
       .then(json => dispatch(receivePost(json)))
       .catch(error => {
-        throw new Error(error);
+        throw new Error('Can\'t fetch this post', error);
       });
+  };
+};
+
+// find single post in store
+export function findPost(postId) {
+  postId = parseInt(postId, 10);
+
+  return {
+    type: FIND_POST,
+    postId,
+  };
+};
+
+// update scroll position
+export function updateScrollPosition(value) {
+  return {
+    type: UPDATE_SCROLL_POSITION,
+    value,
   };
 };

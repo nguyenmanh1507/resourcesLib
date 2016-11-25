@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CardLoader = () => (
-  <div className="ui card">
+  <div className="card">
     <div className="content">
       <div className="background-masker short"></div>
     </div>
