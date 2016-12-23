@@ -10,6 +10,7 @@ import rootReducer from './reducers';
 import App from './App';
 import SiteContentPage from './pages/SiteContentPage';
 import SiteContentDetailPage from './pages/SiteContentDetailPage';
+import SiteSignInPage from './pages/SiteSignInPage';
 
 const loggerMiddleware = createLoger();
 
@@ -29,8 +30,7 @@ ReactDOM.render(
         <Route path="courses" component={SiteContentPage} />
         <Route path="onsite-tranning" component={SiteContentPage} />
         <Route path="post/:id" component={SiteContentDetailPage} />
-        <Route path="signup" component={SiteContentPage} />
-        <Route path="signin" component={SiteContentPage} />
+        <Route path="signin" component={SiteSignInPage} />
       </Route>
     </Router>
   </Provider>,

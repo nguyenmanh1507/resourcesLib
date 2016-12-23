@@ -10,9 +10,6 @@ const SiteHeader = () => (
       <NavLink to="/courses">Courses</NavLink>
       <NavLink to="/onsite-tranning">Onsite Training</NavLink>
       <div className="right menu">
-        <Link to="/signup" className="item">
-          Sign Up
-        </Link>
         <Link to="/signin" className="item">
           Sign In
         </Link>
