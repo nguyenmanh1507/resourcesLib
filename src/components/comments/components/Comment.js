@@ -1,20 +1,6 @@
 import React, { PropTypes, Component } from 'react';
-import CommentReplyForm from './CommentReplyForm';
 
 class Comment extends Component {
-  constructor() {
-    super();
-    this.state = {
-      showReplyForm: false,
-    };
-
-    this.toggleReplyForm = this.toggleReplyForm.bind(this);
-  }
-
-  toggleReplyForm() {
-    this.setState({ showReplyForm: !this.state.showReplyForm });
-  }
-
   render() {
     const props = this.props;
 
@@ -31,22 +17,6 @@ class Comment extends Component {
           <div className="text">
             {props.commentContent}
           </div>
-          <div className="actions">
-            <a
-              href="/"
-              className="reply"
-              rel="nofollow"
-              onClick={evt => {
-                evt.preventDefault();
-                this.toggleReplyForm();
-              }}
-            >Reply</a>
-          </div>
-        </div>
-        <div className="comments">
-          {/* Nesting comments */}
-          {props.children}
-          {this.state.showReplyForm && <CommentReplyForm />}
         </div>
       </div>
     );

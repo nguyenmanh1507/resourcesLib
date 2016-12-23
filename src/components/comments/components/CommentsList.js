@@ -10,17 +10,7 @@ class CommentsList extends Component {
         name={c.name}
         commentTime={c.time}
         commentContent={c.content}
-      >
-        {c.reply.map(r => (
-          <Comment
-            key={r.id}
-            avatarUrl={r.avatarUrl}
-            name={r.name}
-            commentTime={r.time}
-            commentContent={r.content}
-          />
-        ))}
-      </Comment>
+      />
     ));
 
     return (
